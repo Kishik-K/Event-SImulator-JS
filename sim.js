@@ -11,3 +11,11 @@ const nightGates = [
   { id: "South", capacity: 5, queue: [2, 1, 2, 3] },
   { id: "West", capacity: 3, queue: [5, 2, 1, 4] },
 ];
+
+function initializeThroughput(gates) {
+  const summary = {};
+  for (const gate of gates) {
+    summary[gate.id] = 0;
+  };
+  return summary;
+}
